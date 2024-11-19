@@ -3,110 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Souce for coffee</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/variables.css">
 </head>
 <body>
     <header>
         <button class="button-primary">Go back</button>
         <nav>
-            <ul>
-                <li><a>Story</a></li>
-                <li><a>Shop</a></li>
-                <li>
-                    <a>
-                        <picture>
-                            <img src="images/icon.svg" alt="Логотип">
-                        </picture>
-                    </a>
-                </li>
-                <li><a>Contact</a></li>
-                <li><a>Wholesale</a></li>
-            </ul>
+            <button class="button-navigation">Story</button>
+            <button class="button-navigation">Shop</button>
+            <picture>
+                <img src="images/icon.svg" alt="">
+            </picture>
+            <button class="button-navigation">Contact</button>
+            <button class="button-navigation">Wholesale</button>
         </nav>
         <button class="button-primary">Clone</button>
     </header>
     <main>
         <section class="section-banner">
-            <div class="big_logo">
-                <picture>
-                    <img src="images/white_logo.svg" alt="Белый текст логотипа">
+            <div class="logo">
+                <picture class="white_font">
+                    <img src="images/white_logo.svg" alt="">
                 </picture>
-                <picture>
-                    <img src="images/black_logo.svg" alt="Чёрный текст логотипа">
-                </picture>
-            </div>
-            <div class="creeping-line">
-                <p>Put some fire in your belly</p>
-                <picture>
-                    <img src="images/pepper.svg" alt="Перец">
-                </picture>
-            </div>
-            <div class="section-banner-souce-picture">
-                <picture>
-                    <img src="images/souce_picture1.jpg" alt="Картинка соуса">
+                <picture class="black_font">
+                    <img src="images/black_logo.svg" alt="">
                 </picture>
             </div>
             <div class="section-title">
                 <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
-            </div>
-            <div class="section-banner-souce-picture2">
+            </div> 
+            <div class="souce-picture-with-red-background">
                 <picture>
-                    <img src="images/souce_picture2.jpg" alt="Картинка соуса">
+                    <img src="images/souce_picture2.jpg" alt="">
+                </picture>
+            </div> 
+            <div class="creeping-line">
+                <span>Put some fire in your belly</span>
+                <picture>
+                    <img src="images/pepper.svg" alt="">
+                </picture>
+            </div>
+            <div class="souce-picture-with-green-background">
+                <picture>
+                    <img src="images/souce_picture1.jpg" alt="">
                 </picture>
             </div>
         </section>
         <section class="section-catalog">
             <div class="section-catalog-title">
                 <picture>
-                    <img src="images/capricorn.svg" alt="Картинка скорпиона">
+                    <img src="images/capricorn.svg" alt="">
                 </picture>
                 <h2>THROW SOME LAVA IN YOUR JAVA</h2>
                 <picture>
-                    <img src="images/capricorn_reversed.svg" alt="Картинка скорпиона">
+                    <img src="images/capricorn_reversed.svg" alt="">
                 </picture>
             </div>
             <div class="section-catalog-content">
-                <div class="product">
+                <div class="catalog-decoration">
                     <picture>
-                        <img src="images/fire.svg" alt="Огонёк">
-                    </picture>
-                    <p>tangy and tingly</p>
-                    <b>LIGHT ROAST BLEND</b>
-                    <picture>
-                        <img src="images/product1.jpg" alt="Товар">
+                        <img src="images/fire.svg" alt="">
                     </picture>
                     <picture>
-                        <img src="images/frame_product.svg" alt="Задний фон товара">
-                    </picture>
-                </div>
-                <div class="product">
-                    <picture>
-                        <img src="images/flame.svg" alt="Пламя">
-                    </picture>
-                    <p>light & dark roast</p>
-                    <b>UJJO SAMPLER PACK</b>
-                    <picture>
-                        <img src="images/product2.jpg" alt="Товар">
+                        <img src="images/flame.svg" alt="">
                     </picture>
                     <picture>
-                        <img src="images/frame_product.svg" alt="Задний фон товара">
+                        <img src="images/flame.svg" alt="">
                     </picture>
                     <picture>
-                        <img src="images/flame.svg" alt="Пламя">
+                        <img src="images/fire.svg" alt="">
                     </picture>
                 </div>
-                <div class="product">
-                    <p>tangy and tingly</p>
-                    <b>DARK ROAST BLEND</b>
-                    <picture>
-                        <img src="images/product3.jpg" alt="Товар">
-                    </picture>
-                    <picture>
-                        <img src="images/frame_product.svg" alt="Задний фон товара">
-                    </picture>
-                    <picture>
-                        <img src="images/fire.svg" alt="Огонёк">
-                    </picture>
+                <div class="products">
+                    <div class="product">
+                        <picture>
+                            <img src="images/frame_product.svg" alt="">
+                        </picture>
+                        <div class="product-text">
+                            <p class="product-description">tangy and tingly</p>
+                            <p class="product-title">LIGHT ROAST BLEND</p>
+                        </div>
+                        <div class="product-picture">
+                            <picture>
+                                <img src="images/product1.jpg" alt="Товар">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <picture>
+                            <img src="images/frame_product.svg" alt="">
+                        </picture>
+                        <div class="product-text">
+                            <p class="product-description">light & dark roast</p>
+                            <p class="product-title">UJJO SAMPLER PACK</p>
+                        </div>
+                        <div class="product-picture">
+                            <picture>
+                                <img src="images/product2.jpg" alt="Товар">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <picture>
+                            <img src="images/frame_product.svg" alt="">
+                        </picture>
+                        <div class="product-text">
+                            <p class="product-description">tangy and tingly</p>
+                            <p class="product-title">DARK ROAST BLEND</p>
+                        </div>
+                        <div class="product-picture">
+                            <picture>
+                                <img src="images/product3.jpg" alt="Товар">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -114,94 +127,86 @@
             <div class="creeping-line">
                 <p>Put some fire in your belly</p>
                 <picture>
-                    <img src="images/pepper.svg" alt="Перец">
+                    <img src="images/pepper.svg" alt="">
                 </picture>
             </div>
             <div class="section-history-souce-picture">
                 <picture>
-                    <img src="images/souce_picture3.jpg" alt="Картинка соуса">
+                    <img src="images/souce_picture3.jpg" alt="">
                 </picture>
             </div>
-            <div class="section-title">
-                <h2>the story behind the souce</h2>
-            </div>
-            <div class="girl-with-product-picture">
-                <picture>
-                    <img src="images/girl_with_product.jpg" alt="Картинка девушки с товаром">
-                </picture>
-            </div>
-            <div class="section-history-description">
-                <p>HELLO, I’M LAUREN AND AS A LIFELONG<br>
-                    ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY<br>
-                    THINGS, BUT I NEVER THOUGHT HOT SAUCE IN<br>
-                    COFFEE WAS A SANE OPTION UNTIL A FRIEND<br>
-                    DARED ME TO TRY IT.</p>
-                <p>AND IT SUCKED.</p>
-                <p>BUT I WONDERED IF THERE WAS A WAY TO ADD<br>
-                    SPICE TO MY COFFEE. WHEN THERE WAS NO<br>
-                    EASY SOLUTION, UJJO WAS BORN.</p>
-                <p>UJJO (OOO-JOE): THE WORD FOR “FIRE” IN<br>
-                    KONKANI, SPOKEN ON THE WEST COAST OF<br>
-                    INDIA, IS AN HOMAGE AND A LOVE LETTER TO MY<br>
-                    DAD, AN INDIAN IMMIGRANT WHO INSTILLED<br>
-                    A FIRE IN MY PALATE – AND MY HEART – FROM<br>
-                    THE VERY BEGINNING.</p>
-                <picture>
-                    <img src="images/frame_description.svg" alt="Картинка рамки">
-                </picture>
+            <div class="section-history-grid">
+                <div class="section-title">
+                    <h2>the story behind the souce</h2>
+                </div>
+                <div class="section-history-description">
+                    <div class="section-history-text">
+                        <p>HELLO, I’M LAUREN AND AS A LIFELONG
+                            ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY
+                            THINGS, BUT I NEVER THOUGHT HOT SAUCE IN
+                            COFFEE WAS A SANE OPTION UNTIL A FRIEND
+                            DARED ME TO TRY IT.</p>
+                        <p>AND IT SUCKED.</p>
+                        <p>BUT I WONDERED IF THERE WAS A WAY TO ADD
+                            SPICE TO MY COFFEE. WHEN THERE WAS NO
+                            EASY SOLUTION, UJJO WAS BORN.</p>
+                        <p>UJJO (OOO-JOE): THE WORD FOR “FIRE” IN
+                            KONKANI, SPOKEN ON THE WEST COAST OF
+                            INDIA, IS AN HOMAGE AND A LOVE LETTER TO MY
+                            DAD, AN INDIAN IMMIGRANT WHO INSTILLED
+                            A FIRE IN MY PALATE – AND MY HEART – FROM
+                            THE VERY BEGINNING.</p>
+                    </div>
+                    <div class="frame-description">
+                        <picture>
+                            <img src="images/frame_description.svg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="girl-with-product-picture">
+                    <picture>
+                        <img src="images/girl_with_product.jpg" alt="">
+                    </picture>
+                </div>
             </div>
         </section>
-        <div class="section-logo">
+        <div class="section-logo"> 
             <div class="creeping-line">
                 <p>Download our media kit</p>
                 <picture>
-                    <img src="images/pepper.svg" alt="Перец">
+                    <img src="images/pepper.svg" alt="">
                 </picture>
                 <p>Contact for partnership opportunities</p>
                 <picture>
-                    <img src="images/pepper.svg" alt="Перец">
+                    <img src="images/pepper.svg" alt="">
                 </picture>
             </div>
-            <div class="big_logo">
-                <picture>
-                    <img src="images/white_logo.svg" alt="Белый текст логотипа">
-                </picture>
-                <picture>
-                    <img src="images/black_logo.svg" alt="Чёрный текст логотипа">
-                </picture>
-            </div>
-            <div class="frame-logo">
-                <div class="frame-elements">
-                    <picture>
-                        <img src="#" alt="Картинка сахара">
+            <div class="section-logo-frame">
+                <div class="section-logo-frame logo">
+                    <picture class="white_font" >
+                        <img src="images/white_logo.svg" alt="">
                     </picture>
-                    <picture>
-                        <img src="#" alt="Картинка луны">
-                    </picture>
-                    <picture>
-                        <img src="#" alt="Картинка корицы">
-                    </picture>
-                    <picture>
-                        <img src="#" alt="Картинка перца">
+                    <picture class="black_font">
+                        <img src="images/black_logo.svg" alt="">
                     </picture>
                 </div>
-                <picture>
-                    <img src="images/frame_logo.svg" alt="Рамка логотипа">
+                <picture class="frame-logo">
+                    <img src="images/frame_logo.svg" alt="">
                 </picture>
             </div>
+            <div class="green-flame">
+                <picture>
+                    <img src="images/green_flame.svg" alt="">
+                </picture> 
+            </div> 
         </div>
     </main>
-    <footer>
-        <a>Privacy</a>
-        <address>
-            <p>ujjo llc, columbus oh, 43219</p>
+    <footer> 
+        <div class="footer-content">
+            <a>Privacy</a>
+            <span>ujjo llc, columbus oh, 43219</span>
             <a>instagram</a>
-        </address>
-        <div class="green-flame">
-            <picture>
-                <img src="images/green_flame.svg" alt="Зелёное пламя">
-            </picture> 
-        </div>   
+        </div>
     </footer>
 </body>
 </html>
