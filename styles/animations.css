@@ -1,0 +1,31 @@
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+    }
+}
+
+#checkbox-btn:checked ~ nav {
+    animation: show-menu 0.3s linear;
+}
+
+.creeping-content {
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes show-menu {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
