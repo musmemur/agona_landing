@@ -14,12 +14,12 @@ body {
 header {
     position: sticky;
     top: 0;
-    display: flex;
     z-index: 2;
     border: var(--border-lending);
-    align-items: center;
     padding: 2%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
   
 header::before {
@@ -33,16 +33,27 @@ header::before {
     background-color: white; 
 }
 
-header > nav {
+nav {
     display: flex;
+    left: 15vw;
     align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
+    gap: 25vw;
+    padding-left: 1%;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    gap: 2vw;
+}
+
+header picture {
+    position: absolute;
+    left: 43%;
 }
 
 header picture img {
-    max-height: 4vw;
-    min-height: 4vw;
+    max-height: 5vw;
+    min-height: 5vw;
 }
 
 .button-navigation {
@@ -51,22 +62,30 @@ header picture img {
     border: none;
 }
 
+.button-navigation:hover {
+    background-color: var(--button-navigation);
+    color: white;
+} 
+
 .button-primary, .checkbox-button {
     background-color: var(--button-primary-color);
     color: white;
     border: none;
 }
 
-.checkbox-button input {
+input[type="checkbox"] {
     display: none;
 }
 
 .button-primary, .button-navigation, .checkbox-button {
-    font-size: 1vw;
-    width: 10%;
-    height: 3vw;
+    font-size: 1.2vw;
+    height: 3.5vw;
     align-content: center;
     text-align: center;
+}
+
+.button-primary, .checkbox-button, .button-navigation {
+    width: 10vw;
 }
 
 /* Section-banner*/
@@ -376,15 +395,14 @@ footer {
     header picture img {
         max-height: 10vw;
         min-height: 10vw;
-    }
-
-    .button-navigation {
-        display: none;
-    }
+    }   
 
     .button-primary, .checkbox-button {
         width: 10vw;
         height: 10vw;
+    }
+
+    .button-primary, .checkbox-button {
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
@@ -393,19 +411,57 @@ footer {
     .button-primary span, .checkbox-button span {
         display: none;
     }
-    
-    .checkbox-button {
-        background-image: url('../images/button-menu.svg');
-        position: relative;
+
+    .button-navigation {
+        text-align: start;
+        width: 100%;
     }
 
-    .checkbox-button label {
+    label.checkbox-button {
+        display: block;
         cursor: pointer;
+        background-image: url('../images/button-menu.svg');
     }
 
-    .checkbox-button:checked {
-        background-image: url('../images/button-group.svg');
-        background-color: aqua;
+    #checkbox-btn:checked + label {
+        background-image: url('../images/button-close.svg');
+    }
+
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 14vw;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        display: none;
+        gap: 0;
+        padding: 2%;
+        z-index: -1;
+    }
+
+    .left-nav, .right-nav {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    #checkbox-btn:checked ~ nav {
+        display: flex;
+        animation: show-menu 0.3s linear;
+        border: var(--border-lending);
+    }
+
+    nav::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: white; 
     }
 
     .button-primary {
@@ -574,7 +630,7 @@ footer {
         color: white;
     }
 
-    header::before {
+    header::before, nav::before {
         background-color: black;
     }
 
@@ -586,5 +642,33 @@ footer {
 
     footer, .product {
         color: black;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+    }
+}
+
+.creeping-content {
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes show-menu {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
     }
 }
