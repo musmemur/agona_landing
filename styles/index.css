@@ -67,6 +67,10 @@ header picture img {
     color: white;
 } 
 
+.button-navigation:hover, .button-primary:hover, .checkbox-button:hover {
+    font-size: 1.3vw;
+}
+
 .button-primary, .checkbox-button {
     background-color: var(--button-primary-color);
     color: white;
