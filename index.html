@@ -7,20 +7,29 @@
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="assets/fonts/font.css">
         <link rel="stylesheet" href="styles/variables.css">
+        <link rel="stylesheet" href="styles/adaptive.css">
+        <link rel="stylesheet" href="styles/animations.css">
     </head>
     <body>
         <header>
-            <button class="button-primary"><span>Go back</span></button>
+            <input type="checkbox" id="checkbox-btn">
+            <label for="checkbox-btn" class="checkbox-button">
+                <span>Go back</span>
+            </label>
             <nav>
-                <button class="button-navigation">Story</button>
-                <button class="button-navigation">Shop</button>
-                <picture>
-                    <source srcset="images/icon-for-phone.svg" media="(max-width: 960px)">
-                    <img src="images/icon.svg" alt="">
-                </picture>
-                <button class="button-navigation">Contact</button>
-                <button class="button-navigation">Wholesale</button>
+                <div class="left-nav">
+                    <button class="button-navigation">Story</button>
+                    <button class="button-navigation">Shop</button>
+                </div>
+                <div class="right-nav">
+                    <button class="button-navigation">Contact</button>
+                    <button class="button-navigation">Wholesale</button>
+                </div>
             </nav>
+            <picture>
+                <source srcset="images/icon-for-phone.svg" media="(max-width: 960px)">
+                <img src="images/icon.svg" alt="">
+            </picture>
             <button class="button-primary"><span>Clone</span></button>
         </header>
         <main>
@@ -41,11 +50,17 @@
                         <img src="images/souce_picture2.jpg" alt="">
                     </picture>
                 </div> 
-                <div class="creeping-line">
-                    <span>Put some fire in your belly</span>
-                    <picture>
-                        <img src="images/pepper.svg" alt="">
-                    </picture>
+                <div class="running-line">
+                    <div class="running-content">
+                        <p>Put some fire in your belly</p>
+                        <picture>
+                            <img src="images/pepper.svg" alt="">
+                        </picture>
+                        <p>Put some fire in your belly</p>
+                        <picture>
+                            <img src="images/pepper.svg" alt="">
+                        </picture>
+                    </div>
                 </div>
                 <div class="souce-picture-with-green-background">
                     <picture>
@@ -55,11 +70,11 @@
             </section>
             <section class="section-catalog">
                 <div class="section-catalog-title">
-                    <picture>
+                    <picture class="image-scorpion">
                         <img src="images/capricorn.svg" alt="">
                     </picture>
                     <h2>THROW SOME LAVA IN YOUR JAVA</h2>
-                    <picture>
+                    <picture class="image-scorpion-reversed">
                         <img src="images/capricorn_reversed.svg" alt="">
                     </picture>
                 </div>
@@ -125,11 +140,17 @@
                 </div>
             </section>
             <section class="section-history">
-                <div class="creeping-line">
-                    <p>Put some fire in your belly</p>
-                    <picture>
-                        <img src="images/pepper.svg" alt="">
-                    </picture>
+                <div class="running-line">
+                    <div class="running-content">
+                        <p>Put some fire in your belly</p>
+                        <picture>
+                            <img src="images/pepper.svg" alt="">
+                        </picture>
+                        <p>Put some fire in your belly</p>
+                        <picture>
+                            <img src="images/pepper.svg" alt="">
+                        </picture>
+                    </div>
                 </div>
                 <div class="section-history-souce-picture">
                     <picture>
@@ -172,8 +193,9 @@
                 </div>
             </section>
             <div class="section-logo"> 
-                <div class="creeping-line">
-                    <p>Download our media kit</p>
+                <div class="running-line">
+                    <div class="running-content">
+                        <p>Download our media kit</p>
                     <picture>
                         <img src="images/pepper.svg" alt="">
                     </picture>
@@ -181,6 +203,7 @@
                     <picture>
                         <img src="images/pepper.svg" alt="">
                     </picture>
+                    </div>    
                 </div>
                 <div class="section-logo-frame">
                     <div class="section-logo-frame logo">

@@ -1,0 +1,63 @@
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+    }
+}
+
+#checkbox-btn:checked ~ nav {
+    animation: show-menu 0.3s linear;
+}
+
+.running-content {
+    animation: move 10s linear infinite;
+}
+
+.image-scorpion {
+    animation: move-scorpion 5s ease-in-out infinite;
+}
+
+.image-scorpion-reversed {
+    animation: move-scorpion-reverse 5s ease-in-out infinite;
+}
+
+@keyframes show-menu {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes move-scorpion {
+    from {
+        transform: translateX(20%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
+
+@keyframes move-scorpion-reverse {
+    from {
+        transform: translateX(-20%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}
