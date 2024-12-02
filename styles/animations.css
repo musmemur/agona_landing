@@ -8,7 +8,7 @@
     animation: show-menu 0.3s linear;
 }
 
-.creeping-content {
+.running-content {
     animation: move 10s linear infinite;
 }
 
@@ -31,10 +31,10 @@
 
 @keyframes move {
     from {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
     to {
-        transform: translateX(0%);
+        transform: translateX(-10%);
     }
 }
 

@@ -35,7 +35,6 @@ header::before {
 
 nav {
     display: flex;
-    left: 15vw;
     align-items: center;
     gap: 25vw;
     padding-left: 1%;
@@ -134,7 +133,6 @@ input[type="checkbox"] {
 } 
 
 .black_font {
-    position: absolute;
     z-index: 0;
     width: 100vw;
     max-width: 100%;
@@ -165,35 +163,25 @@ input[type="checkbox"] {
     padding: 3% 2%;
 }
 
-.creeping-line { 
+.running-line { 
     padding: 0.5vw 0;
     border: var(--border-lending);
     white-space: nowrap;
     overflow: hidden;
 }
 
-.creeping-content {
+.running-content {
     display: flex;
     gap: 2%;
     justify-content: center;
     align-items: center;
-    animation: move 10s linear infinite;
 }
 
-@keyframes move {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.creeping-line p {
+.running-line p {
     font-size: 2.5vw;
 }
 
-.creeping-line picture img {
+.running-line picture img {
     width: 5vw;
     height: auto;
 }
@@ -201,7 +189,6 @@ input[type="checkbox"] {
 .section-title {
     font-size: 3vw;
     text-align: center;
-    align-content: center;
     padding: 2vw 4vw; 
 }
 
